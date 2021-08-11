@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Fibonacci Fumble</title>
+  </head>
+  <body>
+    <h2> The result of Fibonacci after <span id="iteration"></span> repeats </h2>
+    <label type="text"> Recursion (adjective: recursive) occurs when a thing is defined in terms of itself or of its type. </label>
+    <br/> <br/>
+    <script>
+        var displayEnd;
+        var a, b, end;
+
+        a = 0;
+        b = 1;
+        end = b;
+        // document.write(a+"<br/>")
+        for (var i = 1; i < 18; i++) {
+            document.write(end+"<br/>")
+            document.getElementById("iteration").innerHTML = i;
+            end = a + b;
+            a = b;
+            b = end;
+        }
+    </script>
+  </body>
+</html>
